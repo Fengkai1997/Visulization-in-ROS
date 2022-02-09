@@ -1,0 +1,48 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Jan 16 12:18:51 2022
+
+@author:  Fengkai
+"""
+
+
+import fiona
+import ogr, os
+from shapely.geometry import Polygon, MultiPolygon, shape, Point
+from shapely.geometry import mapping, shape
+from fiona import collection
+from shapely import geometry
+import shapefile
+from matplotlib import pyplot as plt
+import pandas as pd
+#openpart
+os.chdir('/home/') #path
+
+#drawpart
+border_shape=shapefile.Reader("LNDARE.shp")
+border=border_shape.shapes()
+border_points = border[20].points
+x,y = zip(*border_points)
+x_list1=list(x)
+y_list1=list(y)
+
+x1_new=[]
+y1_new=[]
+for i in range(len(y_list1)):
+    if  y_list1[i] > (51+32.8967/60):         
+        x1_new.append(x_list1[i])
+        y1_new.append(y_list1[i])
+
+#x1_new.append(6.7165)
+#y1_new.append(51.5005)
+fig,ax=plt.subplots()
+ax.plot(x1_new,y1_new,"k-") 
+
+ax.grid()
+ax.axis("equal")
+plt.show()
+x_axis= pd.DataFrame([x1_new])
+x_axis.to_csv('x796_land_R.csv', float_format='%11.12f')   #precise
+y_axis= pd.DataFrame([y1_new])
+y_axis.to_csv('y796_land_R.csv', float_format='%11.12f')
