@@ -13,10 +13,7 @@
 #include <iomanip>
 #include </home/xu/catkin_ws/src/areas736_745/src/help_func/csvread.hpp>
 
-//Xu dynamic Pose and Postition version 5
-
-
-
+//Xu dynamic Pose and Postition version experimental
 
 int main( int argc, char** argv )
 {
