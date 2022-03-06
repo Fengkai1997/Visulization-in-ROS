@@ -21,7 +21,7 @@ ship_id = neuss_csv.drop_duplicates(subset=["randomid"], keep="first", inplace=F
 ship_id1 = ship_id["randomid"]
 ship_id_list = ship_id1.values.tolist()
 
-n=11 #the ship we choose to calculate the time
+n=lens(ship_id_list) #the ship we choose to calculate the time
 names = locals()
 
 for k in range(n):
