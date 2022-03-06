@@ -4,7 +4,7 @@
 2. Convert ENC data to separate shapefile to get the shape, location and some other infomation(Python GDAL and Shapefile)
    Store it in csv with Pandas
 3. Visulize with shapefile data which is stored in csv in RViz in ROS(C++，build ROS node）then get the static Map
-4. Process AIS data（over 1000000 rows per day），Filter out valid data, categorize and organize it（Pandas) and know how to use dynamic variable names.
+4. Process AIS data（over 1000000 rows per day），Filter to get valid data, categorize and organize it（Pandas) and know how to use dynamic variable names.
 5. Dynamic visulization,the ship can move, write code , with considering the kinematic model of ships, can show the location and pose of ship.
 6. Modify the code for synchronaiztion requirements, means the time in visulization is proportional to the time in real world and the speed of all ships is proportional to the    real ship. Know how calculate time inverval
 7. Solving the concurrency problem because of large number of nodes
