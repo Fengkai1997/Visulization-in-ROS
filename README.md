@@ -6,7 +6,7 @@
 3. Visulize with shapefile data which is stored in csv in RViz in ROS(C++，build ROS node）then get the static Map
 4. Process AIS data（over 1000000 rows per day），Filter to get valid data, categorize and organize it（Pandas) and know how to use dynamic variable names.
 5. Dynamic visulization,the ship can move, write code , with considering the kinematic model of ships, can show the location and pose of ship.
-6. Modify the code for synchronaiztion requirements, means the time in visulization is proportional to the time in real world and the speed of all ships is proportional to the    real ship. Know how calculate time inverval
+6. Modify the code for synchronaiztion requirements, means the time in visulization is proportional to the time in real world and the speed of all ships is proportional to the    real ship. Know how calculate relative time interval
 7. Solving the concurrency problem because of large number of nodes
 8. Write a template code and Design auto code generator to build all ROSnode code automatically from AIS-data(include cmakelist and roslaunch file),sucessfully, automatocally create 3000 rosnode cpp file and cmakelist.txt and roslaunch file
 9. Try to learn the strukture of ROS master and how it plan and schedule tasks
