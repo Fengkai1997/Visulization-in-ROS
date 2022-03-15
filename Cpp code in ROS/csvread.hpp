@@ -1,16 +1,4 @@
-#include <ros/ros.h>
-#include <visualization_msgs/Marker.h>
-#include "std_msgs/String.h"
-#include <vector>
-#include <string>
-#include <iostream>
-#include <fstream>
-#include <cmath>
-#include <sstream>
-#include <ros/platform.h>
-#include <ros/time.h>
-#include <stdio.h>
-#include <iomanip>
+
 
 
 
